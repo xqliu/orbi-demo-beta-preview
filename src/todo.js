@@ -21,3 +21,7 @@ export function visibleTodos(todos, filter) {
   if (filter === "done") return todos.filter((t) => t.done);
   return todos;
 }
+
+export function clearCompleted(todos) {
+  return todos.filter((t) => !t.done);
+}
